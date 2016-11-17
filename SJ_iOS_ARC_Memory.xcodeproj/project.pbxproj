@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		184969C91DDC80EC000F552A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184969C81DDC80EC000F552A /* main.m */; };
 		184969D11DDC817C000F552A /* SJConcreteStackBlock_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 184969D01DDC817C000F552A /* SJConcreteStackBlock_1.m */; };
+		184969D61DDDCC47000F552A /* SJConcreteStackBlock_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 184969D51DDDCC47000F552A /* SJConcreteStackBlock_2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		184969C81DDC80EC000F552A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		184969CF1DDC817C000F552A /* SJConcreteStackBlock_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJConcreteStackBlock_1.h; sourceTree = "<group>"; };
 		184969D01DDC817C000F552A /* SJConcreteStackBlock_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJConcreteStackBlock_1.m; sourceTree = "<group>"; };
+		184969D41DDDCC47000F552A /* SJConcreteStackBlock_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJConcreteStackBlock_2.h; sourceTree = "<group>"; };
+		184969D51DDDCC47000F552A /* SJConcreteStackBlock_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJConcreteStackBlock_2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				184969C81DDC80EC000F552A /* main.m */,
 				184969CF1DDC817C000F552A /* SJConcreteStackBlock_1.h */,
 				184969D01DDC817C000F552A /* SJConcreteStackBlock_1.m */,
+				184969D41DDDCC47000F552A /* SJConcreteStackBlock_2.h */,
+				184969D51DDDCC47000F552A /* SJConcreteStackBlock_2.m */,
 			);
 			path = SJ_iOS_ARC_Memory;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184969D11DDC817C000F552A /* SJConcreteStackBlock_1.m in Sources */,
+				184969D61DDDCC47000F552A /* SJConcreteStackBlock_2.m in Sources */,
 				184969C91DDC80EC000F552A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
