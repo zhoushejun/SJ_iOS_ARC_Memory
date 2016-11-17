@@ -31,14 +31,14 @@ static __NSConstantStringImpl __NSConstantStringImpl__var_folders_y5_czqql21j0rd
 
 /* 3.MyBlock 定义 */
 struct __SJConcreteStackBlock_2__concreteStackBlock_2_block_impl_0 {
-  struct __block_impl impl;
-  struct __SJConcreteStackBlock_2__concreteStackBlock_2_block_desc_0* Desc;
+  struct __block_impl impl;//5.系统block 数据结构
+  struct __SJConcreteStackBlock_2__concreteStackBlock_2_block_desc_0* Desc;//6.1.MyBlock 的属性信息
   NSString *myStr;
-  __SJConcreteStackBlock_2__concreteStackBlock_2_block_impl_0(void *fp, struct __SJConcreteStackBlock_2__concreteStackBlock_2_block_desc_0 *desc, NSString *_myStr, int flags=0) : myStr(_myStr) {
-    impl.isa = &_NSConcreteStackBlock;
-    impl.Flags = flags;
-    impl.FuncPtr = fp;
-    Desc = desc;
+  __SJConcreteStackBlock_2__concreteStackBlock_2_block_impl_0(void *fp, struct __SJConcreteStackBlock_2__concreteStackBlock_2_block_desc_0 *desc, NSString *_myStr, int flags=0) : myStr(_myStr) {//构造函数
+    impl.isa = &_NSConcreteStackBlock;//7.isa指向它所属的类，取栈指针地址 --- 说明是在栈中分配的block
+    impl.Flags = flags; //不传值时 默认值为0
+    impl.FuncPtr = fp;  //MyBlock 的函数体指针
+    Desc = desc;        //MyBlock 的属性信息指针
   }
 };
 
@@ -67,8 +67,10 @@ static void _I_SJConcreteStackBlock_2_concreteStackBlock_2(SJConcreteStackBlock_
     MyBlock = ((void (*)())&__SJConcreteStackBlock_2__concreteStackBlock_2_block_impl_0((void *)__SJConcreteStackBlock_2__concreteStackBlock_2_block_func_0, &__SJConcreteStackBlock_2__concreteStackBlock_2_block_desc_0_DATA, myStr, 570425344));//3.MyBlock 定义
     ((void (*)(__block_impl *))((__block_impl *)MyBlock)->FuncPtr)((__block_impl *)MyBlock);//4.MyBlock 使用
     /** 3.MyBlock 定义 去掉没用的修饰
-     MyBlock = &__SJConcreteStackBlock_1__concreteStackBlock_1_block_impl_0(__SJConcreteStackBlock_1__concreteStackBlock_1_block_func_0,
-     &__SJConcreteStackBlock_1__concreteStackBlock_1_block_desc_0_DATA);
+     MyBlock = (&__SJConcreteStackBlock_2__concreteStackBlock_2_block_impl_0(__SJConcreteStackBlock_2__concreteStackBlock_2_block_func_0,
+                                                                             &__SJConcreteStackBlock_2__concreteStackBlock_2_block_desc_0_DATA, 
+                                                                             myStr, 
+                                                                             570425344));//3.MyBlock 定义
      */
 }
 

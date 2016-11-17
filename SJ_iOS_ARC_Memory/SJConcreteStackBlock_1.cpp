@@ -5,7 +5,6 @@ struct __NSConstantStringImpl {
   int flags; ///< 字符串起始地址
   char *str; ///< 字符串内容
   long long length; ///< 字符串长度
-
 };
 
 __OBJC_RW_DLLIMPORT int __CFConstantStringClassReference[];
@@ -18,7 +17,6 @@ struct __block_impl {
   void *FuncPtr;
 };
 // Runtime copy/destroy helper functions (from Block_private.h)
-
 __OBJC_RW_DLLIMPORT void _Block_object_assign(void *, const void *, const int);
 __OBJC_RW_DLLIMPORT void _Block_object_dispose(const void *, const int);
 __OBJC_RW_DLLIMPORT void *_NSConcreteGlobalBlock[32]; ///< 全局区 block
